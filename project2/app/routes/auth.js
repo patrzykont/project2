@@ -1,5 +1,5 @@
 var authController = require('../controllers/authcontroller.js');
- 
+var dogArray= require('../data/dogs.js'); 
  
 module.exports = function(app, passport) {
  
@@ -34,6 +34,11 @@ module.exports = function(app, passport) {
  
     ));
  
+    app.get("/api/dogs",function(req, res){
+        console.log(dogArray);
+
+        return res.json(dogArray);
+        }); 
  
     function isLoggedIn(req, res, next) {
  

@@ -2,6 +2,7 @@
 <html>
  
 <head>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Passport with Sequelize</title>
 </head>
  
@@ -9,8 +10,29 @@
     <h2>Dashboard</h2>
     <h5>Hurray! you are logged in.</h5>
 	<h5>Let's find you a bitch!</h5>
+	<img class='pict' src=""></img>
+	<h3 class='name'></h3>
+	<p class='descript'></p>
+	<button class='dislike'>dislike</button>
+	<button class='like'> like </button>
 
- 
+<script type="text/javascript">
+	$.ajax({
+      url: "/api/dogs",
+      method: "GET"
+    }).done(function(response) {
+    	console.log(response)
+		var dog = response[Math.floor(Math.random()*response.length)];
+			console.log(dog);
+
+
+	$(".pict").attr("src",dog.photo);
+	$(".name").text(dog.name);
+	$(".descript").text(dog.description);
+    
+    });
+
+ </script>
 </body>
  
 </html>
