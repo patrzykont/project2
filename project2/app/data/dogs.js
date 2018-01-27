@@ -20,7 +20,7 @@ var dogArray=[
 
 {
 		name: 'Misty',
-		photo:'http://totallynailedit.com/wp-content/uploads/2015/05/do-you-even-know-anything-about-fancy-dogs-1430935209308.jpg',
+		photo:'http://photos.costume-works.com/full/scuba_dog.jpg',
 		description: '"My name is Misty and i like to slober."',
 		number: 3
 
@@ -61,14 +61,14 @@ var dogArray=[
 {
 		name: 'Barbara',
 		photo:'http://cdn.newair.com/kb/wp-content/uploads/2015/12/pet-safety-spoiled-dog1.jpg',
-		description: '"My name is Barbara and i like finger sandwiches."',
+		description: '"My name is Barbara and I like finger sandwiches."',
 		number: 8
 
 },
 
 {
 		name: 'Fluffy',
-		photo:'http://totallynailedit.com/wp-content/uploads/2015/05/do-you-even-know-anything-about-fancy-dogs-1430935209198.jpg',
+		photo:'http://cdn.akc.org/content/hero/hairless_dogs_Hero.jpg',
 		description: '"My name is Fluffy and I lick my butt."',
 		number: 9
 

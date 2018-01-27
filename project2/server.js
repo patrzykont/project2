@@ -23,7 +23,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
  
- 
+app.use(express.static(__dirname + '/public'));
+
 //For Handlebars
 app.set('views', './app/views')
 app.engine('hbs', exphbs({
